@@ -4,24 +4,33 @@ export default function Layout({ children }) {
   const { slug } = useParams()
 
   return (
-    <div className="app-container">
+    <div className="container">
 
       <aside className="sidebar">
-        <h2 className="logo">Admin Panel</h2>
+
+        <div className="logo">
+          ☀️ Admin
+        </div>
 
         <nav className="menu">
+
           <Link to={`/offices/${slug}/clientes`} className="menu-item">
-            Clientes
+            <span className="icon">👤</span>
+            <span className="text">Clientes</span>
           </Link>
 
           <Link to={`/offices/${slug}/cobradores`} className="menu-item">
-            Cobradores
+            <span className="icon">💼</span>
+            <span className="text">Cobradores</span>
           </Link>
 
           <Link to={`/offices/${slug}/creditos`} className="menu-item">
-            Créditos
+            <span className="icon">💳</span>
+            <span className="text">Créditos</span>
           </Link>
+
         </nav>
+
       </aside>
 
       <main className="content">
