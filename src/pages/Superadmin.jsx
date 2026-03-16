@@ -222,31 +222,30 @@ export default function SuperAdmin() {
 const s = {
   page: {
     minHeight: "100vh",
-    background: "linear-gradient(135deg,#fdf6ec,#fef3c7)",
+    background: "linear-gradient(135deg,#f0f4f8,#e2e8f0)",
     display: "flex",
     justifyContent: "center",
-    alignItems: "flex-start",
-    padding: "40px 20px",
-    fontFamily: "'Segoe UI', sans-serif"
+    alignItems: "center",
+    padding: "20px",
+    fontFamily: "'Poppins', sans-serif"
   },
-
   card: {
-    background: "#fffaf3",
+    background: "#fff",
     borderRadius: 18,
     padding: 40,
-    width: 340,
+    width: 360,
     display: "flex",
     flexDirection: "column",
     gap: 16,
-    boxShadow: "0 10px 30px rgba(0,0,0,0.08)"
+    boxShadow: "0 8px 25px rgba(0,0,0,0.1)"
   },
-
   cardTitle: {
-    color: "#92400e",
+    color: "#1f2937",
     textAlign: "center",
-    margin: 0
+    margin: 0,
+    fontWeight: 600,
+    fontSize: 22
   },
-
   dashboard: {
     width: "100%",
     maxWidth: 900,
@@ -254,143 +253,27 @@ const s = {
     flexDirection: "column",
     gap: 25
   },
-
   dashHeader: {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    background: "#f59e0b",
+    background: "#3b82f6",
     padding: "18px 22px",
     borderRadius: 16,
     color: "#fff",
     boxShadow: "0 6px 18px rgba(0,0,0,0.08)"
   },
-
-  form: {
-    display: "flex",
-    flexDirection: "column",
-    gap: 12
-  },
-
-  input: {
-    padding: "12px 14px",
-    borderRadius: 10,
-    border: "1px solid #fcd9a8",
-    background: "#fff",
-    fontSize: 14,
-    outline: "none"
-  },
-
-  btnPrimary: {
-    padding: 12,
-    borderRadius: 12,
-    border: "none",
-    background: "#f59e0b",
-    color: "#fff",
-    fontWeight: 600,
-    cursor: "pointer",
-    fontSize: 14
-  },
-
-  btnSecondary: {
-    padding: 12,
-    borderRadius: 12,
-    border: "1px solid #f59e0b",
-    background: "transparent",
-    color: "#92400e",
-    cursor: "pointer",
-    fontSize: 14
-  },
-
-  btnLogout: {
-    padding: "6px 14px",
-    borderRadius: 10,
-    border: "none",
-    background: "#fff",
-    color: "#b91c1c",
-    cursor: "pointer",
-    fontSize: 13
-  },
-
-  btnSmall: {
-    padding: "6px 12px",
-    borderRadius: 8,
-    border: "none",
-    background: "#fde68a",
-    color: "#92400e",
-    cursor: "pointer",
-    fontSize: 12
-  },
-
-  table: {
-    display: "flex",
-    flexDirection: "column",
-    gap: 12
-  },
-
-  row: {
-    background: "#fffaf3",
-    borderRadius: 14,
-    padding: "16px 20px",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    flexWrap: "wrap",
-    gap: 10,
-    boxShadow: "0 6px 18px rgba(0,0,0,0.05)"
-  },
-
-  rowInfo: {
-    display: "flex",
-    flexDirection: "column",
-    gap: 4,
-    color: "#92400e"
-  },
-
-  rowActions: {
-    display: "flex",
-    gap: 8,
-    alignItems: "center"
-  },
-
-  badge: {
-    padding: "3px 12px",
-    borderRadius: 20,
-    color: "#fff",
-    fontSize: 12
-  },
-
-  overlay: {
-    position: "fixed",
-    inset: 0,
-    background: "rgba(0,0,0,0.3)",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    zIndex: 100
-  },
-
-  modal: {
-    background: "#fffaf3",
-    borderRadius: 18,
-    padding: 32,
-    width: "100%",
-    maxWidth: 420,
-    display: "flex",
-    flexDirection: "column",
-    gap: 6,
-    boxShadow: "0 12px 40px rgba(0,0,0,0.15)"
-  },
-
-  modalTitle: {
-    color: "#92400e",
-    margin: "0 0 16px",
-    textAlign: "center"
-  },
-
-  error: {
-    color: "#dc2626",
-    textAlign: "center",
-    fontSize: 13
-  }
+  input: { padding: "12px 14px", borderRadius: 10, border: "1px solid #d1d5db", background: "#fff", fontSize: 14, outline: "none" },
+  btnPrimary: { padding: 12, borderRadius: 12, border: "none", background: "#3b82f6", color: "#fff", fontWeight: 600, cursor: "pointer", fontSize: 14 },
+  btnSecondary: { padding: 12, borderRadius: 12, border: "1px solid #3b82f6", background: "transparent", color: "#1f2937", cursor: "pointer", fontSize: 14 },
+  btnLogout: { padding: "6px 14px", borderRadius: 10, border: "none", background: "#fff", color: "#b91c1c", cursor: "pointer", fontSize: 13 },
+  btnSmall: { padding: "6px 12px", borderRadius: 8, border: "none", background: "#93c5fd", color: "#1f2937", cursor: "pointer", fontSize: 12 },
+  row: { background: "#fff", borderRadius: 14, padding: "16px 20px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 10, boxShadow: "0 6px 15px rgba(0,0,0,0.05)" },
+  rowInfo: { display: "flex", flexDirection: "column", gap: 4, color: "#1f2937" },
+  rowActions: { display: "flex", gap: 8, alignItems: "center" },
+  badge: { padding: "3px 12px", borderRadius: 20, color: "#fff", fontSize: 12 },
+  overlay: { position: "fixed", inset: 0, background: "rgba(0,0,0,0.3)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 100 },
+  modal: { background: "#fff", borderRadius: 18, padding: 32, width: "100%", maxWidth: 420, display: "flex", flexDirection: "column", gap: 6, boxShadow: "0 12px 40px rgba(0,0,0,0.15)" },
+  modalTitle: { color: "#1f2937", margin: "0 0 16px", textAlign: "center" },
+  error: { color: "#dc2626", textAlign: "center", fontSize: 13 }
 }
